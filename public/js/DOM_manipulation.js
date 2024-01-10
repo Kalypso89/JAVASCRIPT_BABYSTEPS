@@ -61,6 +61,16 @@ printMyArrayOfNames();
 
 /*5-Create an array of numbers. Create a function that prints on the screen how many numbers there are in that array*/
 
+const myArrayOfNumbers = [11,22,33,44,55,66,77,88,99];
+
+const answer5 = document.getElementById('answer-5');
+
+function howManyNumbers () {
+    answer5.innerHTML = myArrayOfNumbers.length;
+}
+
+howManyNumbers();
+
 /*6-Create the nodes required to print a form.*/
 
 /*7-Create the nodes required to print a table.*/
