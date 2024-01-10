@@ -11,3 +11,8 @@
     display: block;
     font-size: 100px;
 }
+
+td {
+    padding: 10px;
+    text-align: center;
+}
