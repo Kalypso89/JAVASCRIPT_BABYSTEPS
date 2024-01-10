@@ -1,0 +1,13 @@
+#answer-3 {
+    display: flex;
+    column-gap: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+    font-size: 100px;
+}
