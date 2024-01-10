@@ -46,13 +46,15 @@ const myArrayOfNames = ["Ángela", "Belén", "Carlos", "Daniela", "Esmeralda", "
 function printMyArrayOfNames() {
     const answer4 = document.getElementById('answer-4');
 
-    answer4.innerHTML = `
-    <ul>
-        ${
-            myArrayOfNames.map(name => `<li>${name}</li>`).join('')
-        }
-    </ul>
-    `
+    let ulContent = "<ul>";
+
+    for (const name of myArrayOfNames) {
+        ulContent += `<li>${name}</li>`;
+    }
+
+    ulContent += `</ul>`;
+        
+    answer4.innerHTML = ulContent;
 }
 
 printMyArrayOfNames();
