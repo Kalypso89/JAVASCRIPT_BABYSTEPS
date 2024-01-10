@@ -41,7 +41,21 @@ function showMe() {
 
 /*4-Create an array of 10 names. Create a function that prints on the screen a list of that array*/
 
+const myArrayOfNames = ["Ángela", "Belén", "Carlos", "Daniela", "Esmeralda", "Fausto", "Guillermo", "Helena", "Inés", "Joel"];
 
+function printMyArrayOfNames() {
+    const answer4 = document.getElementById('answer-4');
+
+    answer4.innerHTML = `
+    <ul>
+        ${
+            myArrayOfNames.map(name => `<li>${name}</li>`).join('')
+        }
+    </ul>
+    `
+}
+
+printMyArrayOfNames();
 
 /*5-Create an array of numbers. Create a function that prints on the screen how many numbers there are in that array*/
 
